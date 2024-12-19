@@ -40,6 +40,12 @@ nav{
     transition: color 0.3s ease;
     text-decoration: none;
 }
+.nav-left a:hover{
+    color:rgb(155, 241, 15);
+}
+.nav-right a:hover{
+    color: rgb(155, 241, 15);
+}
 .nav-right a {
     color:#D6DDE6;
     font-size: 18px;
@@ -53,7 +59,8 @@ nav{
     font-size: 40px;
     font-weight: bold;
     color: #D6DDE6;
-    text-align: center;
+    /* text-align: center; */
+    align-items: center;
 }
 #main-image{
     height: 100%;
@@ -88,7 +95,6 @@ nav{
 /* container3 */
 .container3{
     padding: 48px;
-    display:flex;
     justify-content: center;
     margin-bottom: 10px;
     display: grid;
@@ -130,6 +136,9 @@ nav{
     padding-bottom: 30px;
     justify-content: space-between;
 }
+.Testimonialcard:hover{
+    transform: scale(0.9);
+}
 .testcard{
     display: flex;
     gap:10px;
@@ -154,7 +163,7 @@ nav{
 
 /* footer */
 .footer{
-    padding:50px 100px;
+    padding:100px 20px 20px 20px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -167,7 +176,7 @@ nav{
     align-items: center;
 }
 .footer p{
-    font-size: 40px;
+    font-size: 28px;
     color:#a9a9a9;
     margin:0;
 }
@@ -219,10 +228,48 @@ button:hover{
     }
 }
 
-
-
-
-
-
-/* ghfdre */
-/* khgyt */
+/* SCREENS MAX - 600px */
+@media screen and (max-width: 600px){
+    .nav-bar{
+        justify-content: center;
+    }
+    .nav-left{
+        display: none !important;
+    }
+    .nav-right{
+        display: none !important;
+    }
+    #main-content{
+        font-size: 60px;
+    }
+    #container2-content{
+        padding: 20px;
+    }
+    #container2-content p{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .container3{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+    .child{
+        align-items: start;
+    }
+    .child .img{
+        height: 100%;
+        width: 100%;
+    }
+    .Testimonials{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-content p{
+        font-size: 20px;
+    }
+}
