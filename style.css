@@ -39,7 +39,7 @@ nav{
     font-size: 18px;
     transition: color 0.3s ease;
     text-decoration: none;
-}
+} 
 .nav-left a:hover{
     color:rgb(155, 241, 15);
 }
@@ -70,10 +70,13 @@ nav{
     font-size: 120px;
     opacity: 0;
     transform: translateY(-100px); 
-    animation: drop 4s forwards; 
+    animation: drop 6s forwards; 
     text-align:center;
     margin-bottom: 0;
     font-size: 120px;
+}
+#main-content:hover{
+    color:#e8bea3;
 }
 
 /* container2 */
@@ -194,6 +197,7 @@ button:hover{
     background-color: #a9a9a9;
     color:#1b2b24;
 }
+
 
 /* header animation */
 @keyframes drop {
